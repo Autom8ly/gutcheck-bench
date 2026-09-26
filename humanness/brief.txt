@@ -1,0 +1,10 @@
+Rewrite the paragraph below so it reads as if a thoughtful engineer wrote it by hand for a public blog post: natural rhythm, plain words, no marketing tone, no filler. It is the opening paragraph of an independent benchmark report.
+
+Rules:
+- Keep every fact and number exactly: Jev is TypeSafe's hosted model; it answers typed questions (pick one, yes/no, score) with probabilities instead of generated text; seven open-source look-alikes appeared within a week of its release; all seven installed; 14 configurations run one at a time on a single 8 GB consumer GPU; every one scored on the same 764 out-of-domain decisions; Jev itself also tested through TypeSafe's API; Kev-4B quantized to 4-bit is the pick; it uses 3.7 GB, lands 4.7 points behind Jev at the same speed, has fewer confidently wrong answers, and has no per-call cost.
+- Do not add facts, claims, jokes about AI, or anything not in the original.
+- One paragraph, 80 to 130 words.
+- Output ONLY the rewritten paragraph. No title, no quotes, no preamble, no notes.
+
+Original:
+Jev, TypeSafe's hosted model, answers typed questions (pick one, yes/no, score) with probabilities instead of generated text. Within a week of its release, seven open-source look-alikes appeared. We installed all seven, ran 14 configurations of them one at a time on a single 8 GB consumer GPU, and scored every one on the same 764 out-of-domain decisions, alongside Jev itself through TypeSafe's API. Kev-4B quantized to 4-bit is the clear pick: in 3.7 GB it lands 4.7 points behind Jev at the same speed, with fewer confidently wrong answers and no per-call cost.

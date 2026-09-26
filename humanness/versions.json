@@ -1,0 +1,52 @@
+{
+ "A": {
+  "model": "Fable 5.1",
+  "text": "Jev is TypeSafe's hosted model. Instead of generating text, it answers typed questions — pick one, yes/no, score — with probabilities. Within a week of its release, seven open-source look-alikes had appeared, so we installed all seven. We ran 14 configurations of them, one at a time, on a single 8 GB consumer GPU, and scored every one on the same 764 out-of-domain decisions. We also ran Jev itself through TypeSafe's API alongside them. The clear pick is Kev-4B quantized to 4-bit. It fits in 3.7 GB, lands 4.7 points behind Jev at the same speed, gives fewer confidently wrong answers, and has no per-call cost.",
+  "words": 106
+ },
+ "B": {
+  "model": "qwen3:8b (local)",
+  "text": "Jev, TypeSafe's hosted model, answers typed questions with probabilities rather than generated text. Within a week of its release, seven open-source alternatives emerged. All seven were installed, and 14 configurations ran sequentially on an 8 GB consumer GPU. Each was scored on the same 764 out-of-domain decisions, with Jev itself tested via TypeSafe's API. Kev-4B quantized to 4-bit stands out: using 3.7 GB, it trails Jev by 4.7 points at the same speed, with fewer confidently wrong answers and no per-call cost.",
+  "words": 82
+ },
+ "C": {
+  "model": "Haiku 4.5",
+  "text": "TypeSafe released Jev, a hosted model that answers typed questions—pick one, yes/no, score—by returning probabilities instead of generated text. Within a week, seven open-source alternatives appeared. We installed all seven, ran 14 configurations of them one at a time on a single 8 GB consumer GPU, and scored each against the same 764 out-of-domain decisions, testing Jev itself through TypeSafe's API. Kev-4B quantized to 4-bit emerged as the standout: running in 3.7 GB, it lands just 4.7 points behind Jev at the same speed while producing fewer confidently wrong answers and incurring no per-call cost.",
+  "words": 95
+ },
+ "D": {
+  "model": "Codex (OpenAI, codex CLI)",
+  "text": "Jev is TypeSafe's hosted model for typed questions—pick one, yes/no, or score—and returns probabilities rather than generated text. Within a week of its release, seven open-source look-alikes had appeared. We installed all seven and ran 14 configurations, one at a time, on a single 8 GB consumer GPU. We scored every configuration on the same 764 out-of-domain decisions and also tested Jev through TypeSafe's API. Our pick is Kev-4B quantized to 4-bit: it uses 3.7 GB, runs at the same speed as Jev, and finishes 4.7 points behind it, while producing fewer confidently wrong answers and carrying no per-call cost.",
+  "words": 100
+ },
+ "E": {
+  "model": "OpenCode big-pickle",
+  "text": "TypeSafe hosts Jev, and it answers typed questions — pick one, yes/no, score — with probabilities rather than generated text. A week after its release, seven open-source look-alikes had appeared. We installed all seven and ran 14 configurations of them one at a time on a single 8 GB consumer GPU, scoring every one against the same 764 out-of-domain decisions, with Jev measured separately through TypeSafe's API. Kev-4B quantized to 4-bit is the clear pick. At 3.7 GB, it trails Jev by 4.7 points at the same speed, gives fewer confidently wrong answers, and costs nothing per call.",
+  "words": 98
+ },
+ "F": {
+  "model": "gemma4:e2b (local)",
+  "text": "Jev is TypeSafe's hosted model; it provides probabilities for typed questions (pick one, yes/no, score) instead of generated text. Seven open-source look-alikes emerged within a week of its release, and all were installed. We ran fourteen configurations sequentially on a single 8 GB consumer GPU, scoring every model on the same 764 out-of-domain decisions, including Jev via the TypeSafe API. The Kev-4B quantized to 4-bit is the preferred option: it uses 3.7 GB, is 4.7 points slower than Jev at the same speed, exhibits fewer confidently wrong answers, and has no per-call cost.",
+  "words": 93
+ },
+ "G": {
+  "model": "Opus 4.6 (claude CLI)",
+  "text": "Jev is TypeSafe's hosted model for answering typed questions—pick one, yes/no, score—returning probabilities rather than generated text. Seven open-source look-alikes showed up within a week of its release. We installed all seven, set up 14 configurations, and ran them one at a time on a single 8 GB consumer GPU, scoring each against the same 764 out-of-domain decisions. We tested Jev itself through TypeSafe's API under the same conditions. The standout is Kev-4B quantized to 4-bit: it fits in 3.7 GB, lands just 4.7 points behind Jev at the same speed, produces fewer confidently wrong answers, and carries no per-call cost.",
+  "words": 101
+ },
+ "H": {
+  "model": "hermes3:8b (local)",
+  "text": "When TypeSafe's hosted model, Jev, first hit the scene, it didn't take long for seven open-source clones to emerge. Despite this, Jev held its own, answering typed questions with probabilities rather than generated text. We put all the models to the test, running 14 configurations one by one on a single 8 GB consumer GPU, and scoring them on the same 764 out-of-domain decisions. Kev-4B, quantized to 4-bit, proved to be the standout pick, coming in at 3.7 GB and landing just 4.7 points behind Jev at the same speed, with fewer confidently wrong answers and no per-call cost.",
+  "words": 99
+ },
+ "I": {
+  "model": "Opus 5.5 (current Opus)",
+  "text": "Jev is TypeSafe's hosted model. You ask it a typed question (pick one, yes/no, or a score), and it answers with probabilities instead of generated text. Within a week of its release, seven open-source look-alikes showed up. We installed all seven and ran 14 configurations of them, one at a time, on a single 8 GB consumer GPU. Every configuration was scored on the same 764 out-of-domain decisions, and we also tested Jev itself through TypeSafe's API. The one we'd pick is Kev-4B quantized to 4-bit. It uses 3.7 GB and lands 4.7 points behind Jev at the same speed. It also gives fewer confidently wrong answers, and there's no per-call cost.",
+  "words": 112
+ },
+ "J": {
+  "model": "Sonnet 5",
+  "text": "Jev is TypeSafe's hosted model: you give it a typed question, pick one, yes/no, a score, and it comes back with probabilities instead of generated text. Seven open-source look-alikes showed up within a week of its release, and we installed all seven. We ran 14 configurations, one at a time, on a single 8 GB consumer GPU, then scored every one on the same 764 out-of-domain decisions, with Jev itself tested through TypeSafe's API for comparison. The pick is Kev-4B quantized to 4-bit: it uses 3.7 GB, lands 4.7 points behind Jev at the same speed, makes fewer confidently wrong calls, and costs nothing per call.",
+  "words": 106
+ }
+}

@@ -1,0 +1,640 @@
+{
+ "composition_held_and_or": {
+  "jev-hosted": {
+   "acc": 0.96875,
+   "n": 32
+  },
+  "kev-0.8b": {
+   "acc": 0.65625,
+   "n": 32
+  },
+  "kev-4b-4bit": {
+   "acc": 0.90625,
+   "n": 32
+  },
+  "kev-4b-8bit": {
+   "acc": 1.0,
+   "n": 32
+  },
+  "kev-9b-4bit": {
+   "acc": 0.90625,
+   "n": 32
+  },
+  "laya": {
+   "acc": 0.6875,
+   "n": 32
+  },
+  "nanojev-0.6b": {
+   "acc": 0.375,
+   "n": 32
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.625,
+   "n": 32
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.4375,
+   "n": 32
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.71875,
+   "n": 32
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.65625,
+   "n": 32
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.5,
+   "n": 32
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.71875,
+   "n": 32
+  },
+  "von": {
+   "acc": 0.46875,
+   "n": 32
+  }
+ },
+ "composition_held_conditional": {
+  "jev-hosted": {
+   "acc": 0.78125,
+   "n": 32
+  },
+  "kev-0.8b": {
+   "acc": 0.65625,
+   "n": 32
+  },
+  "kev-4b-4bit": {
+   "acc": 0.875,
+   "n": 32
+  },
+  "kev-4b-8bit": {
+   "acc": 0.96875,
+   "n": 32
+  },
+  "kev-9b-4bit": {
+   "acc": 0.90625,
+   "n": 32
+  },
+  "laya": {
+   "acc": 0.4375,
+   "n": 32
+  },
+  "nanojev-0.6b": {
+   "acc": 0.4375,
+   "n": 32
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.5,
+   "n": 32
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.4375,
+   "n": 32
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.53125,
+   "n": 32
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.53125,
+   "n": 32
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.4375,
+   "n": 32
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.46875,
+   "n": 32
+  },
+  "von": {
+   "acc": 0.5,
+   "n": 32
+  }
+ },
+ "composition_held_or_not": {
+  "jev-hosted": {
+   "acc": 0.96875,
+   "n": 32
+  },
+  "kev-0.8b": {
+   "acc": 0.5625,
+   "n": 32
+  },
+  "kev-4b-4bit": {
+   "acc": 0.96875,
+   "n": 32
+  },
+  "kev-4b-8bit": {
+   "acc": 0.96875,
+   "n": 32
+  },
+  "kev-9b-4bit": {
+   "acc": 0.96875,
+   "n": 32
+  },
+  "laya": {
+   "acc": 0.40625,
+   "n": 32
+  },
+  "nanojev-0.6b": {
+   "acc": 0.5625,
+   "n": 32
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.6875,
+   "n": 32
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.5625,
+   "n": 32
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.46875,
+   "n": 32
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.4375,
+   "n": 32
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.6875,
+   "n": 32
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.46875,
+   "n": 32
+  },
+  "von": {
+   "acc": 0.59375,
+   "n": 32
+  }
+ },
+ "contrastive_authorization": {
+  "jev-hosted": {
+   "acc": 1.0,
+   "n": 40
+  },
+  "kev-0.8b": {
+   "acc": 0.95,
+   "n": 40
+  },
+  "kev-4b-4bit": {
+   "acc": 1.0,
+   "n": 40
+  },
+  "kev-4b-8bit": {
+   "acc": 1.0,
+   "n": 40
+  },
+  "kev-9b-4bit": {
+   "acc": 1.0,
+   "n": 40
+  },
+  "laya": {
+   "acc": 0.675,
+   "n": 40
+  },
+  "nanojev-0.6b": {
+   "acc": 0.5,
+   "n": 40
+  },
+  "ollama-qwen3-8b": {
+   "acc": 1.0,
+   "n": 40
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.5,
+   "n": 40
+  },
+  "rizzo-4b-q4": {
+   "acc": 1.0,
+   "n": 40
+  },
+  "rizzo-4b-q8": {
+   "acc": 1.0,
+   "n": 40
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 1.0,
+   "n": 40
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.95,
+   "n": 40
+  },
+  "von": {
+   "acc": 1.0,
+   "n": 40
+  }
+ },
+ "contrastive_deadline": {
+  "jev-hosted": {
+   "acc": 0.925,
+   "n": 40
+  },
+  "kev-0.8b": {
+   "acc": 0.35,
+   "n": 40
+  },
+  "kev-4b-4bit": {
+   "acc": 0.6,
+   "n": 40
+  },
+  "kev-4b-8bit": {
+   "acc": 0.7,
+   "n": 40
+  },
+  "kev-9b-4bit": {
+   "acc": 0.775,
+   "n": 40
+  },
+  "laya": {
+   "acc": 0.375,
+   "n": 40
+  },
+  "nanojev-0.6b": {
+   "acc": 0.3,
+   "n": 40
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.5,
+   "n": 40
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.35,
+   "n": 40
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.275,
+   "n": 40
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.275,
+   "n": 40
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.5,
+   "n": 40
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.475,
+   "n": 40
+  },
+  "von": {
+   "acc": 0.7,
+   "n": 40
+  }
+ },
+ "emotion": {
+  "jev-hosted": {
+   "acc": 0.6,
+   "n": 80
+  },
+  "kev-0.8b": {
+   "acc": 0.5,
+   "n": 80
+  },
+  "kev-4b-4bit": {
+   "acc": 0.6,
+   "n": 80
+  },
+  "kev-4b-8bit": {
+   "acc": 0.5625,
+   "n": 80
+  },
+  "kev-9b-4bit": {
+   "acc": 0.5875,
+   "n": 80
+  },
+  "laya": {
+   "acc": 0.6125,
+   "n": 80
+  },
+  "nanojev-0.6b": {
+   "acc": 0.2875,
+   "n": 80
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.4875,
+   "n": 80
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.6125,
+   "n": 80
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.5625,
+   "n": 80
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.55,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.6125,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.575,
+   "n": 80
+  },
+  "von": {
+   "acc": 0.8625,
+   "n": 80
+  }
+ },
+ "mmlu": {
+  "jev-hosted": {
+   "acc": 0.9,
+   "n": 80
+  },
+  "kev-0.8b": {
+   "acc": 0.45,
+   "n": 80
+  },
+  "kev-4b-4bit": {
+   "acc": 0.7375,
+   "n": 80
+  },
+  "kev-4b-8bit": {
+   "acc": 0.7,
+   "n": 80
+  },
+  "kev-9b-4bit": {
+   "acc": 0.7875,
+   "n": 80
+  },
+  "laya": {
+   "acc": 0.3375,
+   "n": 80
+  },
+  "nanojev-0.6b": {
+   "acc": 0.2625,
+   "n": 80
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.7,
+   "n": 80
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.375,
+   "n": 80
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.575,
+   "n": 80
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.5625,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.65,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.675,
+   "n": 80
+  },
+  "von": {
+   "acc": 0.3,
+   "n": 80
+  }
+ },
+ "paws": {
+  "jev-hosted": {
+   "acc": 0.8,
+   "n": 80
+  },
+  "kev-0.8b": {
+   "acc": 0.6,
+   "n": 80
+  },
+  "kev-4b-4bit": {
+   "acc": 0.775,
+   "n": 80
+  },
+  "kev-4b-8bit": {
+   "acc": 0.7875,
+   "n": 80
+  },
+  "kev-9b-4bit": {
+   "acc": 0.75,
+   "n": 80
+  },
+  "laya": {
+   "acc": 0.7875,
+   "n": 80
+  },
+  "nanojev-0.6b": {
+   "acc": 0.4375,
+   "n": 80
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.7625,
+   "n": 80
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.4375,
+   "n": 80
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.7375,
+   "n": 80
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.775,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.8125,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.8375,
+   "n": 80
+  },
+  "von": {
+   "acc": 0.8875,
+   "n": 80
+  }
+ },
+ "qnli": {
+  "jev-hosted": {
+   "acc": 0.925,
+   "n": 80
+  },
+  "kev-0.8b": {
+   "acc": 0.8125,
+   "n": 80
+  },
+  "kev-4b-4bit": {
+   "acc": 0.9125,
+   "n": 80
+  },
+  "kev-4b-8bit": {
+   "acc": 0.9125,
+   "n": 80
+  },
+  "kev-9b-4bit": {
+   "acc": 0.9125,
+   "n": 80
+  },
+  "laya": {
+   "acc": 0.8375,
+   "n": 80
+  },
+  "nanojev-0.6b": {
+   "acc": 0.5375,
+   "n": 80
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.825,
+   "n": 80
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.5625,
+   "n": 80
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.825,
+   "n": 80
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.8625,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.875,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.85,
+   "n": 80
+  },
+  "von": {
+   "acc": 0.7,
+   "n": 80
+  }
+ },
+ "sciq": {
+  "jev-hosted": {
+   "acc": 0.9875,
+   "n": 80
+  },
+  "kev-0.8b": {
+   "acc": 0.9,
+   "n": 80
+  },
+  "kev-4b-4bit": {
+   "acc": 0.975,
+   "n": 80
+  },
+  "kev-4b-8bit": {
+   "acc": 0.975,
+   "n": 80
+  },
+  "kev-9b-4bit": {
+   "acc": 0.95,
+   "n": 80
+  },
+  "laya": {
+   "acc": 0.875,
+   "n": 80
+  },
+  "nanojev-0.6b": {
+   "acc": 0.475,
+   "n": 80
+  },
+  "ollama-qwen3-8b": {
+   "acc": 1.0,
+   "n": 80
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.8875,
+   "n": 80
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.975,
+   "n": 80
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.975,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.9625,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.9625,
+   "n": 80
+  },
+  "von": {
+   "acc": 0.9,
+   "n": 80
+  }
+ },
+ "tweet_offensive": {
+  "jev-hosted": {
+   "acc": 0.825,
+   "n": 80
+  },
+  "kev-0.8b": {
+   "acc": 0.675,
+   "n": 80
+  },
+  "kev-4b-4bit": {
+   "acc": 0.8,
+   "n": 80
+  },
+  "kev-4b-8bit": {
+   "acc": 0.775,
+   "n": 80
+  },
+  "kev-9b-4bit": {
+   "acc": 0.7625,
+   "n": 80
+  },
+  "laya": {
+   "acc": 0.7375,
+   "n": 80
+  },
+  "nanojev-0.6b": {
+   "acc": 0.325,
+   "n": 80
+  },
+  "ollama-qwen3-8b": {
+   "acc": 0.5875,
+   "n": 80
+  },
+  "rizzo-1.7b-q8": {
+   "acc": 0.8,
+   "n": 80
+  },
+  "rizzo-4b-q4": {
+   "acc": 0.6125,
+   "n": 80
+  },
+  "rizzo-4b-q8": {
+   "acc": 0.5375,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-4bit": {
+   "acc": 0.725,
+   "n": 80
+  },
+  "semif-qwen3.5-4b-8bit": {
+   "acc": 0.675,
+   "n": 80
+  },
+  "von": {
+   "acc": 0.7875,
+   "n": 80
+  }
+ }
+}

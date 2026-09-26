@@ -1,0 +1,10 @@
+{
+ "X-stiff": {
+  "p_human": 0.25,
+  "natural": 0.14
+ },
+ "Y-casual": {
+  "p_human": 0.59,
+  "natural": 0.845
+ }
+}

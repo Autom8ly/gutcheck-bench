@@ -1,0 +1,19 @@
+diff --git a/nimble/scoring/cuda_scorer.py b/nimble/scoring/cuda_scorer.py
+index 443672e..62914d8 100644
+--- a/nimble/scoring/cuda_scorer.py
++++ b/nimble/scoring/cuda_scorer.py
+@@ -95,6 +95,14 @@ class CudaCandidateScorer:
+                 # Weights beyond the GPU budget stay in host memory and stream through hooks.
+                 loading_options["max_memory"] = {index: max_gpu_memory for index in range(torch.cuda.device_count())}
+                 loading_options["max_memory"]["cpu"] = HOST_MEMORY_BUDGET
++        import os as _os
++        _q = _os.environ.get("NIMBLE_QUANT")   # jev-eval patch
++        if _q:
++            from transformers import BitsAndBytesConfig
++            loading_options["quantization_config"] = (BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
++                bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_use_double_quant=True) if _q == "4bit"
++                else BitsAndBytesConfig(load_in_8bit=True))
++            loading_options["device_map"] = {"": 0}
+         self.model, loading = cls.from_pretrained(model_path, **loading_options)
+         if any(loading.get(key) for key in ("missing_keys", "unexpected_keys", "mismatched_keys", "error_msgs")):
+             raise ValueError(f"Checkpoint did not load exactly: {loading}")

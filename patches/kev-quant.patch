@@ -1,0 +1,53 @@
+diff --git a/kev/checkpoint.py b/kev/checkpoint.py
+index 30ff24a..51d93fe 100644
+--- a/kev/checkpoint.py
++++ b/kev/checkpoint.py
+@@ -271,16 +271,19 @@ class Checkpoint:
+             # (one rounding of W + delta, as for every served Kev; parity in runs/serving-27b-*).
+             dtype, merge = torch.bfloat16, merge and bool(opts.fused)
+         merge = merge and not self.adapter_config().get("trainable_token_indices")   # token-trained adapters stay unmerged
++        quant = os.environ.get("KEV_QUANT")   # jev-eval patch: a quantized backbone keeps its adapter unmerged, in bf16
++        if quant: dtype, merge = torch.bfloat16, False
+         m = DecisionModel(meta.base, tok, device, lora=None, revision=meta.base_revision, head_dim=meta.head_dim,
+                           option_isolation=meta.option_isolation, dtype=dtype, attn=opts.attn)
+-        m.lm = PeftModel.from_pretrained(m.lm, self.path, torch_device=str(device)).to(device)   # trainable token embeddings, if any, live in the adapter
++        m.lm = PeftModel.from_pretrained(m.lm, self.path, torch_device=str(device))
++        if not quant: m.lm = m.lm.to(device)   # trainable token embeddings, if any, live in the adapter (bnb weights are already placed)
+         if opts.lora_scale != 1:
+             for module in m.lm.modules():
+                 if isinstance(getattr(module, "scaling", None), dict):
+                     for k in module.scaling: module.scaling[k] *= opts.lora_scale
+             m.lora_scale = opts.lora_scale
+         if merge: m.lm = m.lm.merge_and_unload()     # W += delta: fp32 math, one rounding (see LoadOptions.merge)
+-        if dtype != torch.float32: m.lm = m.lm.to(dtype)
++        if dtype != torch.float32 and not quant: m.lm = m.lm.to(dtype)
+         return m, merge
+ 
+     COMPAT_FIELDS = ("base", "base_revision", "lora", "head_dim", "option_isolation", "special_embeddings", "weights")
+diff --git a/kev/model.py b/kev/model.py
+index f2b0c9e..e4d73f8 100644
+--- a/kev/model.py
++++ b/kev/model.py
+@@ -1,3 +1,4 @@
++import os
+ """Decision model: causal LM backbone + block-causal branch mask + pointer readout."""
+ import copy, math, os, re
+ import torch
+@@ -223,7 +224,17 @@ class DecisionModel(nn.Module):
+         # dtype: fp32 for training and exact evaluation; bf16 is a serving option for large backbones (8B on a 32 GB Mac)
+         load = {"dtype": dtype, "attn_implementation": attn}
+         if direct_load: load["device_map"] = {"": torch.cuda.current_device() if device == "cuda" else device}   # "cuda": under torchrun, this rank's GPU
++        quant = os.environ.get("KEV_QUANT")   # jev-eval patch: 4bit|8bit bitsandbytes backbone to fit small GPUs
++        if quant:
++            from transformers import BitsAndBytesConfig
++            load["quantization_config"] = (BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
++                                                              bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_use_double_quant=True)
++                                           if quant == "4bit" else BitsAndBytesConfig(load_in_8bit=True))
++            load["dtype"] = torch.bfloat16
++            load["device_map"] = {"": 0}
+         self.lm = AutoModel.from_pretrained(weights, **load) if weights else AutoModelForCausalLM.from_pretrained(name, revision=revision, **load).model
++        if quant:   # jev-eval patch: drop the discarded lm_head's cached blocks before the adapter loads
++            import gc; gc.collect(); torch.cuda.empty_cache()
+         self.pad_id = pad_id(tok)
+         # hybrid backbones (Qwen3.5: Gated DeltaNet layers, recurrent) cannot honour the block-causal mask, so every
+         # question runs as its own causal row continuing from the state (rows_of). Attention-only backbones keep the

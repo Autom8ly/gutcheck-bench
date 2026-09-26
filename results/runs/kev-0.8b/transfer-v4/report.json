@@ -1,0 +1,162 @@
+{
+ "clean": {
+  "n": 656,
+  "acc": 0.6509146341463414,
+  "ece": 0.0540828839246441,
+  "brier": 0.4304734278930848,
+  "nll": 0.7172726102189021,
+  "mean_conf": 0.6577938746754768,
+  "confident_error_rate": 0.001524390243902439,
+  "coverage_at_0_9": 0.10365853658536585,
+  "coverage_at_5pct_error": 0.1402439024390244,
+  "coverage_at_1pct_error": 0.0975609756097561,
+  "score_mae": 0.6992368375679433
+ },
+ "tasks": {
+  "composition_held_and_or": {
+   "n": 32,
+   "acc": 0.65625,
+   "ece": 0.14376562499999995,
+   "brier": 0.43611937562499997,
+   "nll": 0.6294293225929668,
+   "mean_conf": 0.7924968749999999,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0625,
+   "coverage_at_5pct_error": 0.15625,
+   "coverage_at_1pct_error": 0.15625
+  },
+  "composition_held_conditional": {
+   "n": 32,
+   "acc": 0.65625,
+   "ece": 0.11118437500000003,
+   "brier": 0.43262053437500003,
+   "nll": 0.6210788735710853,
+   "mean_conf": 0.622859375,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.15625,
+   "coverage_at_1pct_error": 0.15625
+  },
+  "composition_held_or_not": {
+   "n": 32,
+   "acc": 0.5625,
+   "ece": 0.18513437500000005,
+   "brier": 0.495400768125,
+   "nll": 0.686199575208619,
+   "mean_conf": 0.684990625,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.125,
+   "coverage_at_1pct_error": 0.125
+  },
+  "contrastive_authorization": {
+   "n": 40,
+   "acc": 0.95,
+   "ece": 0.19903500000000002,
+   "brier": 0.170263382,
+   "nll": 0.3176948156053735,
+   "mean_conf": 0.755215,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 1.0,
+   "coverage_at_1pct_error": 0.75
+  },
+  "contrastive_deadline": {
+   "n": 40,
+   "acc": 0.35,
+   "ece": 0.15749573186335733,
+   "brier": 0.644349474229584,
+   "nll": 1.03732308097909,
+   "mean_conf": 0.5074957318633573,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.05,
+   "coverage_at_1pct_error": 0.05,
+   "score_mae": 0.6992368375679433
+  },
+  "emotion": {
+   "n": 80,
+   "acc": 0.5,
+   "ece": 0.10495755232176558,
+   "brier": 0.6143009414663159,
+   "nll": 1.273150792282149,
+   "mean_conf": 0.5179637656400999,
+   "confident_error_rate": 0.0125,
+   "coverage_at_0_9": 0.025,
+   "coverage_at_5pct_error": 0.0125,
+   "coverage_at_1pct_error": 0.0125
+  },
+  "mmlu": {
+   "n": 80,
+   "acc": 0.45,
+   "ece": 0.10175233927244837,
+   "brier": 0.6360543030307797,
+   "nll": 1.157193565737565,
+   "mean_conf": 0.4829787520800375,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0375,
+   "coverage_at_5pct_error": 0.125,
+   "coverage_at_1pct_error": 0.125
+  },
+  "paws": {
+   "n": 80,
+   "acc": 0.6,
+   "ece": 0.11674500000000003,
+   "brier": 0.49821656999999997,
+   "nll": 0.6935081232280337,
+   "mean_conf": 0.6442775000000001,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0375,
+   "coverage_at_1pct_error": 0.0375
+  },
+  "qnli": {
+   "n": 80,
+   "acc": 0.8125,
+   "ece": 0.06826624999999995,
+   "brier": 0.25220019825,
+   "nll": 0.3970650177102959,
+   "mean_conf": 0.76282875,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.2,
+   "coverage_at_5pct_error": 0.55,
+   "coverage_at_1pct_error": 0.3875
+  },
+  "sciq": {
+   "n": 80,
+   "acc": 0.9,
+   "ece": 0.08745525890266509,
+   "brier": 0.13720787186140784,
+   "nll": 0.2768495444373039,
+   "mean_conf": 0.844298138687094,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.5625,
+   "coverage_at_5pct_error": 0.9125,
+   "coverage_at_1pct_error": 0.6875
+  },
+  "tweet_offensive": {
+   "n": 80,
+   "acc": 0.675,
+   "ece": 0.06600125000000001,
+   "brier": 0.43893952475,
+   "nll": 0.631676303558349,
+   "mean_conf": 0.67006875,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0375,
+   "coverage_at_1pct_error": 0.0375
+  }
+ },
+ "latency_ms": {
+  "p50": 25.126779500169505,
+  "p95": 89.16625875021965,
+  "n": 764
+ },
+ "suite": "kev/evals/v4/transfer-v4 (development split)",
+ "endpoint": "http://127.0.0.1:8008",
+ "requested_model": "kev-latest",
+ "served_model": "kev-latest",
+ "records": 764,
+ "questions": 764,
+ "note": "recorded with kev.benchmark before gutcheck existed; re-scored with gutcheck.metrics"
+}

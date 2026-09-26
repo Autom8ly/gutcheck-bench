@@ -1,0 +1,162 @@
+{
+ "clean": {
+  "n": 656,
+  "acc": 0.649390243902439,
+  "ece": 0.08397337169284547,
+  "brier": 0.47911110223845016,
+  "nll": 0.888802585585259,
+  "mean_conf": 0.7276322676284467,
+  "confident_error_rate": 0.04420731707317073,
+  "coverage_at_0_9": 0.21189024390243902,
+  "coverage_at_5pct_error": 0.0,
+  "coverage_at_1pct_error": 0.0,
+  "score_mae": 0.7076086036576111
+ },
+ "tasks": {
+  "composition_held_and_or": {
+   "n": 32,
+   "acc": 0.6875,
+   "ece": 0.12673125,
+   "brier": 0.46576453125,
+   "nll": 0.673185884127788,
+   "mean_conf": 0.78259375,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.03125,
+   "coverage_at_1pct_error": 0.03125
+  },
+  "composition_held_conditional": {
+   "n": 32,
+   "acc": 0.4375,
+   "ece": 0.228465625,
+   "brier": 0.619743725625,
+   "nll": 0.8421158900785934,
+   "mean_conf": 0.665965625,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "composition_held_or_not": {
+   "n": 32,
+   "acc": 0.40625,
+   "ece": 0.33958750000000004,
+   "brier": 0.77981727625,
+   "nll": 1.0831693526796533,
+   "mean_conf": 0.7458374999999999,
+   "confident_error_rate": 0.09375,
+   "coverage_at_0_9": 0.21875,
+   "coverage_at_5pct_error": 0.03125,
+   "coverage_at_1pct_error": 0.03125
+  },
+  "contrastive_authorization": {
+   "n": 40,
+   "acc": 0.675,
+   "ece": 0.164885,
+   "brier": 0.41056748900000006,
+   "nll": 0.5872759196378812,
+   "mean_conf": 0.8022649999999999,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.5,
+   "coverage_at_1pct_error": 0.475
+  },
+  "contrastive_deadline": {
+   "n": 40,
+   "acc": 0.375,
+   "ece": 0.1848949886143499,
+   "brier": 0.7205702587209477,
+   "nll": 1.1574214330336845,
+   "mean_conf": 0.5334389610115896,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0,
+   "score_mae": 0.7076086036576111
+  },
+  "emotion": {
+   "n": 80,
+   "acc": 0.6125,
+   "ece": 0.3075378757189572,
+   "brier": 0.6886734368883723,
+   "nll": 2.038083975534879,
+   "mean_conf": 0.9062566070920948,
+   "confident_error_rate": 0.275,
+   "coverage_at_0_9": 0.7625,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "mmlu": {
+   "n": 80,
+   "acc": 0.3375,
+   "ece": 0.13267314335530644,
+   "brier": 0.7802120663161417,
+   "nll": 1.4650297637434317,
+   "mean_conf": 0.44304771994022724,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0125,
+   "coverage_at_1pct_error": 0.0125
+  },
+  "paws": {
+   "n": 80,
+   "acc": 0.7875,
+   "ece": 0.05894249999999993,
+   "brier": 0.31208726550000004,
+   "nll": 0.4712365100862706,
+   "mean_conf": 0.770575,
+   "confident_error_rate": 0.025,
+   "coverage_at_0_9": 0.325,
+   "coverage_at_5pct_error": 0.275,
+   "coverage_at_1pct_error": 0.1625
+  },
+  "qnli": {
+   "n": 80,
+   "acc": 0.8375,
+   "ece": 0.09197000000000001,
+   "brier": 0.2936492275,
+   "nll": 0.4665643958460259,
+   "mean_conf": 0.7880225000000001,
+   "confident_error_rate": 0.025,
+   "coverage_at_0_9": 0.2,
+   "coverage_at_5pct_error": 0.1375,
+   "coverage_at_1pct_error": 0.1375
+  },
+  "sciq": {
+   "n": 80,
+   "acc": 0.875,
+   "ece": 0.1359127961265405,
+   "brier": 0.23435799529030374,
+   "nll": 0.47320115823064823,
+   "mean_conf": 0.7460357870151454,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.225,
+   "coverage_at_5pct_error": 0.5625,
+   "coverage_at_1pct_error": 0.2375
+  },
+  "tweet_offensive": {
+   "n": 80,
+   "acc": 0.7375,
+   "ece": 0.13803125,
+   "brier": 0.30803195975,
+   "nll": 0.4623282712676719,
+   "mean_conf": 0.76703625,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.1375,
+   "coverage_at_5pct_error": 0.45,
+   "coverage_at_1pct_error": 0.4375
+  }
+ },
+ "latency_ms": {
+  "p50": 23.10640499990768,
+  "p95": 25.931143200068618,
+  "n": 764
+ },
+ "suite": "kev/evals/v4/transfer-v4 (development split)",
+ "endpoint": "http://127.0.0.1:8102",
+ "requested_model": "laya",
+ "served_model": "laya-rl-agent",
+ "records": 764,
+ "questions": 764,
+ "note": "recorded with kev.benchmark before gutcheck existed; re-scored with gutcheck.metrics"
+}

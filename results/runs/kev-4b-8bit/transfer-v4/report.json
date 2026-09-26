@@ -1,0 +1,162 @@
+{
+ "clean": {
+  "n": 656,
+  "acc": 0.8216463414634146,
+  "ece": 0.02853742751417006,
+  "brier": 0.24216609009241338,
+  "nll": 0.4320807085055554,
+  "mean_conf": 0.8139096295554165,
+  "confident_error_rate": 0.007621951219512195,
+  "coverage_at_0_9": 0.4725609756097561,
+  "coverage_at_5pct_error": 0.6341463414634146,
+  "coverage_at_1pct_error": 0.37347560975609756,
+  "score_mae": 0.3333751548368015
+ },
+ "tasks": {
+  "composition_held_and_or": {
+   "n": 32,
+   "acc": 1.0,
+   "ece": 0.06667499999999996,
+   "brier": 0.03846937125,
+   "nll": 0.07989434576636502,
+   "mean_conf": 0.933325,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.8125,
+   "coverage_at_5pct_error": 1.0,
+   "coverage_at_1pct_error": 1.0
+  },
+  "composition_held_conditional": {
+   "n": 32,
+   "acc": 0.96875,
+   "ece": 0.10768750000000003,
+   "brier": 0.10094956,
+   "nll": 0.1959895024669638,
+   "mean_conf": 0.86689375,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.5,
+   "coverage_at_5pct_error": 1.0,
+   "coverage_at_1pct_error": 0.75
+  },
+  "composition_held_or_not": {
+   "n": 32,
+   "acc": 0.96875,
+   "ece": 0.08110624999999987,
+   "brier": 0.11205070749999999,
+   "nll": 0.19830480327786082,
+   "mean_conf": 0.90280625,
+   "confident_error_rate": 0.03125,
+   "coverage_at_0_9": 0.75,
+   "coverage_at_5pct_error": 1.0,
+   "coverage_at_1pct_error": 0.6875
+  },
+  "contrastive_authorization": {
+   "n": 40,
+   "acc": 1.0,
+   "ece": 0.006092499999999945,
+   "brier": 7.866450000000008e-05,
+   "nll": 0.006112256138005832,
+   "mean_conf": 0.9939075,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 1.0,
+   "coverage_at_5pct_error": 1.0,
+   "coverage_at_1pct_error": 1.0
+  },
+  "contrastive_deadline": {
+   "n": 40,
+   "acc": 0.7,
+   "ece": 0.12260382019526314,
+   "brier": 0.33074596437298875,
+   "nll": 0.5064200444953652,
+   "mean_conf": 0.7885035686543108,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.425,
+   "coverage_at_5pct_error": 0.5,
+   "coverage_at_1pct_error": 0.475,
+   "score_mae": 0.3333751548368015
+  },
+  "emotion": {
+   "n": 80,
+   "acc": 0.5625,
+   "ece": 0.13924285137572945,
+   "brier": 0.547650663546716,
+   "nll": 1.1122938467735177,
+   "mean_conf": 0.6556382183009081,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0875,
+   "coverage_at_5pct_error": 0.1875,
+   "coverage_at_1pct_error": 0.1875
+  },
+  "mmlu": {
+   "n": 80,
+   "acc": 0.7,
+   "ece": 0.08965921768697974,
+   "brier": 0.375230756652471,
+   "nll": 0.6955531157666041,
+   "mean_conf": 0.6564890951993284,
+   "confident_error_rate": 0.0125,
+   "coverage_at_0_9": 0.25,
+   "coverage_at_5pct_error": 0.325,
+   "coverage_at_1pct_error": 0.2
+  },
+  "paws": {
+   "n": 80,
+   "acc": 0.7875,
+   "ece": 0.06699874999999998,
+   "brier": 0.31617271774999994,
+   "nll": 0.49457563271286153,
+   "mean_conf": 0.8405787499999999,
+   "confident_error_rate": 0.025,
+   "coverage_at_0_9": 0.4125,
+   "coverage_at_5pct_error": 0.275,
+   "coverage_at_1pct_error": 0.0625
+  },
+  "qnli": {
+   "n": 80,
+   "acc": 0.9125,
+   "ece": 0.028472500000000008,
+   "brier": 0.140736536,
+   "nll": 0.2390171207467066,
+   "mean_conf": 0.8877425000000001,
+   "confident_error_rate": 0.0125,
+   "coverage_at_0_9": 0.6125,
+   "coverage_at_5pct_error": 0.825,
+   "coverage_at_1pct_error": 0.45
+  },
+  "sciq": {
+   "n": 80,
+   "acc": 0.975,
+   "ece": 0.06397638547297635,
+   "brier": 0.04325725862210833,
+   "nll": 0.10000609450696685,
+   "mean_conf": 0.9271761145270236,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.825,
+   "coverage_at_5pct_error": 1.0,
+   "coverage_at_1pct_error": 0.95
+  },
+  "tweet_offensive": {
+   "n": 80,
+   "acc": 0.775,
+   "ece": 0.0843362500000001,
+   "brier": 0.29671383625000003,
+   "nll": 0.45567438831773605,
+   "mean_conf": 0.7340187499999999,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.15,
+   "coverage_at_5pct_error": 0.3375,
+   "coverage_at_1pct_error": 0.2375
+  }
+ },
+ "latency_ms": {
+  "p50": 390.76199249939236,
+  "p95": 412.786489798782,
+  "n": 764
+ },
+ "suite": "kev/evals/v4/transfer-v4 (development split)",
+ "endpoint": "http://127.0.0.1:8201",
+ "requested_model": "kev-latest",
+ "served_model": "kev-latest",
+ "records": 764,
+ "questions": 764,
+ "note": "recorded with kev.benchmark before gutcheck existed; re-scored with gutcheck.metrics"
+}

@@ -1,0 +1,162 @@
+{
+ "clean": {
+  "n": 656,
+  "acc": 0.725609756097561,
+  "ece": 0.1479784730879894,
+  "brier": 0.38902829384169374,
+  "nll": 0.7225683624756188,
+  "mean_conf": 0.8735882291855506,
+  "confident_error_rate": 0.06707317073170732,
+  "coverage_at_0_9": 0.6310975609756098,
+  "coverage_at_5pct_error": 0.3399390243902439,
+  "coverage_at_1pct_error": 0.05030487804878049,
+  "score_mae": 0.48505424950022513
+ },
+ "tasks": {
+  "composition_held_and_or": {
+   "n": 32,
+   "acc": 0.71875,
+   "ece": 0.1539178533618248,
+   "brier": 0.4177727875702677,
+   "nll": 0.6187492507181538,
+   "mean_conf": 0.8453038846671871,
+   "confident_error_rate": 0.09375,
+   "coverage_at_0_9": 0.53125,
+   "coverage_at_5pct_error": 0.34375,
+   "coverage_at_1pct_error": 0.34375
+  },
+  "composition_held_conditional": {
+   "n": 32,
+   "acc": 0.46875,
+   "ece": 0.32776610399390615,
+   "brier": 0.7306280494818727,
+   "nll": 0.9916847836858528,
+   "mean_conf": 0.747624783745853,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "composition_held_or_not": {
+   "n": 32,
+   "acc": 0.46875,
+   "ece": 0.3462672648941115,
+   "brier": 0.6636783997717536,
+   "nll": 0.9059417931392235,
+   "mean_conf": 0.8150172648941116,
+   "confident_error_rate": 0.09375,
+   "coverage_at_0_9": 0.40625,
+   "coverage_at_5pct_error": 0.25,
+   "coverage_at_1pct_error": 0.25
+  },
+  "contrastive_authorization": {
+   "n": 40,
+   "acc": 0.95,
+   "ece": 0.04078337389368991,
+   "brier": 0.07524949270648211,
+   "nll": 0.11982497430776788,
+   "mean_conf": 0.9816620977033723,
+   "confident_error_rate": 0.025,
+   "coverage_at_0_9": 0.95,
+   "coverage_at_5pct_error": 1.0,
+   "coverage_at_1pct_error": 0.925
+  },
+  "contrastive_deadline": {
+   "n": 40,
+   "acc": 0.475,
+   "ece": 0.40172649075064815,
+   "brier": 0.7313764905598417,
+   "nll": 1.4133901275724192,
+   "mean_conf": 0.8767264907506483,
+   "confident_error_rate": 0.125,
+   "coverage_at_0_9": 0.55,
+   "coverage_at_5pct_error": 0.325,
+   "coverage_at_1pct_error": 0.325,
+   "score_mae": 0.48505424950022513
+  },
+  "emotion": {
+   "n": 80,
+   "acc": 0.575,
+   "ece": 0.2726570413759889,
+   "brier": 0.6624907498241264,
+   "nll": 1.564243378431599,
+   "mean_conf": 0.8195284702082002,
+   "confident_error_rate": 0.1375,
+   "coverage_at_0_9": 0.5,
+   "coverage_at_5pct_error": 0.0125,
+   "coverage_at_1pct_error": 0.0125
+  },
+  "mmlu": {
+   "n": 80,
+   "acc": 0.675,
+   "ece": 0.09256204496747875,
+   "brier": 0.4076960069374883,
+   "nll": 0.789907588446982,
+   "mean_conf": 0.7598494656292287,
+   "confident_error_rate": 0.0125,
+   "coverage_at_0_9": 0.4375,
+   "coverage_at_5pct_error": 0.525,
+   "coverage_at_1pct_error": 0.0375
+  },
+  "paws": {
+   "n": 80,
+   "acc": 0.8375,
+   "ece": 0.09755107270169322,
+   "brier": 0.2702909957168472,
+   "nll": 0.5046188156637029,
+   "mean_conf": 0.9123857195581824,
+   "confident_error_rate": 0.0875,
+   "coverage_at_0_9": 0.75,
+   "coverage_at_5pct_error": 0.3125,
+   "coverage_at_1pct_error": 0.175
+  },
+  "qnli": {
+   "n": 80,
+   "acc": 0.85,
+   "ece": 0.07858072375348135,
+   "brier": 0.17936445492333947,
+   "nll": 0.28701141326340507,
+   "mean_conf": 0.9285807237534813,
+   "confident_error_rate": 0.025,
+   "coverage_at_0_9": 0.7875,
+   "coverage_at_5pct_error": 0.8125,
+   "coverage_at_1pct_error": 0.4875
+  },
+  "sciq": {
+   "n": 80,
+   "acc": 0.9625,
+   "ece": 0.04402763859797012,
+   "brier": 0.058566591579101365,
+   "nll": 0.09986319289558475,
+   "mean_conf": 0.9646285082610767,
+   "confident_error_rate": 0.0125,
+   "coverage_at_0_9": 0.925,
+   "coverage_at_5pct_error": 1.0,
+   "coverage_at_1pct_error": 0.9125
+  },
+  "tweet_offensive": {
+   "n": 80,
+   "acc": 0.675,
+   "ece": 0.2110779243614735,
+   "brier": 0.4834785241582667,
+   "nll": 0.9062583016414152,
+   "mean_conf": 0.8860779243614736,
+   "confident_error_rate": 0.125,
+   "coverage_at_0_9": 0.65,
+   "coverage_at_5pct_error": 0.0375,
+   "coverage_at_1pct_error": 0.0375
+  }
+ },
+ "latency_ms": {
+  "p50": 171.0821215001488,
+  "p95": 192.4772953986576,
+  "n": 764
+ },
+ "suite": "kev/evals/v4/transfer-v4 (development split)",
+ "endpoint": "http://127.0.0.1:8204",
+ "requested_model": "semif",
+ "served_model": "semif-Qwen3.5-4B-8bit",
+ "records": 764,
+ "questions": 764,
+ "note": "recorded with kev.benchmark before gutcheck existed; re-scored with gutcheck.metrics"
+}

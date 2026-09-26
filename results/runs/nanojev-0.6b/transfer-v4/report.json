@@ -1,0 +1,162 @@
+{
+ "clean": {
+  "n": 656,
+  "acc": 0.39939024390243905,
+  "ece": 0.23138911975894078,
+  "brier": 0.7404987376986144,
+  "nll": 1.1846350683063183,
+  "mean_conf": 0.6007510572545466,
+  "confident_error_rate": 0.006097560975609756,
+  "coverage_at_0_9": 0.022865853658536585,
+  "coverage_at_5pct_error": 0.003048780487804878,
+  "coverage_at_1pct_error": 0.003048780487804878,
+  "score_mae": 0.7252537578161766
+ },
+ "tasks": {
+  "composition_held_and_or": {
+   "n": 32,
+   "acc": 0.375,
+   "ece": 0.3478307031868134,
+   "brier": 0.7292830488251709,
+   "nll": 0.9502209506412806,
+   "mean_conf": 0.7228307031868135,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "composition_held_conditional": {
+   "n": 32,
+   "acc": 0.4375,
+   "ece": 0.2556278562046208,
+   "brier": 0.6344119652521384,
+   "nll": 0.8400404738267588,
+   "mean_conf": 0.6931278562046208,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "composition_held_or_not": {
+   "n": 32,
+   "acc": 0.5625,
+   "ece": 0.1681949937915964,
+   "brier": 0.5547447766660955,
+   "nll": 0.758734308613342,
+   "mean_conf": 0.7097105689448948,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "contrastive_authorization": {
+   "n": 40,
+   "acc": 0.5,
+   "ece": 0.3797836571931839,
+   "brier": 0.7926652764463246,
+   "nll": 1.1350428574755718,
+   "mean_conf": 0.8797836571931839,
+   "confident_error_rate": 0.025,
+   "coverage_at_0_9": 0.05,
+   "coverage_at_5pct_error": 0.025,
+   "coverage_at_1pct_error": 0.025
+  },
+  "contrastive_deadline": {
+   "n": 40,
+   "acc": 0.3,
+   "ece": 0.18946910599489156,
+   "brier": 0.6792203339159707,
+   "nll": 1.109276538632241,
+   "mean_conf": 0.4267131889500865,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0,
+   "score_mae": 0.7252537578161766
+  },
+  "emotion": {
+   "n": 80,
+   "acc": 0.2875,
+   "ece": 0.08087166161080109,
+   "brier": 0.8101295444584341,
+   "nll": 1.7187586289763033,
+   "mean_conf": 0.21769416633284444,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0125,
+   "coverage_at_1pct_error": 0.0125
+  },
+  "mmlu": {
+   "n": 80,
+   "acc": 0.2625,
+   "ece": 0.10403535562104467,
+   "brier": 0.7875221111317938,
+   "nll": 1.4623645646497359,
+   "mean_conf": 0.3665353556210447,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "paws": {
+   "n": 80,
+   "acc": 0.4375,
+   "ece": 0.41408705636858933,
+   "brier": 0.8145067953371459,
+   "nll": 1.1294006092239457,
+   "mean_conf": 0.8515870563685894,
+   "confident_error_rate": 0.0375,
+   "coverage_at_0_9": 0.1125,
+   "coverage_at_5pct_error": 0.0125,
+   "coverage_at_1pct_error": 0.0125
+  },
+  "qnli": {
+   "n": 80,
+   "acc": 0.5375,
+   "ece": 0.2905613079667091,
+   "brier": 0.6420666456919815,
+   "nll": 0.8870230360030835,
+   "mean_conf": 0.819025194644928,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.05,
+   "coverage_at_5pct_error": 0.1125,
+   "coverage_at_1pct_error": 0.1125
+  },
+  "sciq": {
+   "n": 80,
+   "acc": 0.475,
+   "ece": 0.09627184784949191,
+   "brier": 0.673818312398299,
+   "nll": 1.2786236671768045,
+   "mean_conf": 0.3926683530258689,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0375,
+   "coverage_at_1pct_error": 0.0375
+  },
+  "tweet_offensive": {
+   "n": 80,
+   "acc": 0.325,
+   "ece": 0.4501324690878392,
+   "brier": 0.8407275186324743,
+   "nll": 1.0960790627954782,
+   "mean_conf": 0.7751324690878392,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.0,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  }
+ },
+ "latency_ms": {
+  "p50": 30.187326499799383,
+  "p95": 52.29816855080575,
+  "n": 764
+ },
+ "suite": "kev/evals/v4/transfer-v4 (development split)",
+ "endpoint": "http://127.0.0.1:8208",
+ "requested_model": "nanojev",
+ "served_model": "nanojev-0.6b-unified-games",
+ "records": 764,
+ "questions": 764,
+ "note": "recorded with kev.benchmark before gutcheck existed; re-scored with gutcheck.metrics"
+}

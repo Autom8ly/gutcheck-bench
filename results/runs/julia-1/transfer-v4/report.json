@@ -1,0 +1,162 @@
+{
+ "clean": {
+  "n": 656,
+  "acc": 0.5304878048780488,
+  "ece": 0.3545554760184396,
+  "brier": 0.7634540812201769,
+  "nll": 1.9281161194433947,
+  "mean_conf": 0.88240581243422,
+  "confident_error_rate": 0.2530487804878049,
+  "coverage_at_0_9": 0.6402439024390244,
+  "coverage_at_5pct_error": 0.006097560975609756,
+  "coverage_at_1pct_error": 0.006097560975609756,
+  "score_mae": 0.8124001196725917
+ },
+ "tasks": {
+  "composition_held_and_or": {
+   "n": 32,
+   "acc": 0.53125,
+   "ece": 0.3861073623189101,
+   "brier": 0.8191295931272713,
+   "nll": 1.965449779979377,
+   "mean_conf": 0.9117040479254412,
+   "confident_error_rate": 0.3125,
+   "coverage_at_0_9": 0.6875,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "composition_held_conditional": {
+   "n": 32,
+   "acc": 0.5,
+   "ece": 0.47285336177633575,
+   "brier": 0.9198542415929702,
+   "nll": 2.0435861269508644,
+   "mean_conf": 0.9499045722289048,
+   "confident_error_rate": 0.375,
+   "coverage_at_0_9": 0.8125,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "composition_held_or_not": {
+   "n": 32,
+   "acc": 0.5625,
+   "ece": 0.2927472992354816,
+   "brier": 0.5401171909279769,
+   "nll": 1.0661174058795102,
+   "mean_conf": 0.824601965220238,
+   "confident_error_rate": 0.15625,
+   "coverage_at_0_9": 0.4375,
+   "coverage_at_5pct_error": 0.09375,
+   "coverage_at_1pct_error": 0.09375
+  },
+  "contrastive_authorization": {
+   "n": 40,
+   "acc": 0.375,
+   "ece": 0.5224578387875265,
+   "brier": 0.997908460232716,
+   "nll": 1.9495895327089077,
+   "mean_conf": 0.8974578387875265,
+   "confident_error_rate": 0.4,
+   "coverage_at_0_9": 0.7,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "contrastive_deadline": {
+   "n": 40,
+   "acc": 0.3,
+   "ece": 0.5381563533328315,
+   "brier": 1.1382237182466768,
+   "nll": 2.472204769461661,
+   "mean_conf": 0.7785965444904418,
+   "confident_error_rate": 0.275,
+   "coverage_at_0_9": 0.35,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0,
+   "score_mae": 0.8124001196725917
+  },
+  "emotion": {
+   "n": 80,
+   "acc": 0.9,
+   "ece": 0.03891905812588701,
+   "brier": 0.12570690765215872,
+   "nll": 0.19145418535632489,
+   "mean_conf": 0.9334276306753507,
+   "confident_error_rate": 0.0,
+   "coverage_at_0_9": 0.775,
+   "coverage_at_5pct_error": 0.8875,
+   "coverage_at_1pct_error": 0.8
+  },
+  "mmlu": {
+   "n": 80,
+   "acc": 0.2375,
+   "ece": 0.629386744037656,
+   "brier": 1.340572511574806,
+   "nll": 4.7512889109135985,
+   "mean_conf": 0.8668867440376562,
+   "confident_error_rate": 0.425,
+   "coverage_at_0_9": 0.575,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  },
+  "paws": {
+   "n": 80,
+   "acc": 0.525,
+   "ece": 0.31233000912007935,
+   "brier": 0.6770399633510188,
+   "nll": 1.1960034772386359,
+   "mean_conf": 0.8335534587461183,
+   "confident_error_rate": 0.175,
+   "coverage_at_0_9": 0.525,
+   "coverage_at_5pct_error": 0.025,
+   "coverage_at_1pct_error": 0.025
+  },
+  "qnli": {
+   "n": 80,
+   "acc": 0.575,
+   "ece": 0.28010767753168475,
+   "brier": 0.6448167981314405,
+   "nll": 1.1506513029479097,
+   "mean_conf": 0.8551076775316847,
+   "confident_error_rate": 0.1875,
+   "coverage_at_0_9": 0.5375,
+   "coverage_at_5pct_error": 0.0625,
+   "coverage_at_1pct_error": 0.0625
+  },
+  "sciq": {
+   "n": 80,
+   "acc": 0.7,
+   "ece": 0.20731353207320932,
+   "brier": 0.4680737848841474,
+   "nll": 1.1420247505645116,
+   "mean_conf": 0.9059411525951362,
+   "confident_error_rate": 0.15,
+   "coverage_at_0_9": 0.75,
+   "coverage_at_5pct_error": 0.3375,
+   "coverage_at_1pct_error": 0.2
+  },
+  "tweet_offensive": {
+   "n": 80,
+   "acc": 0.4375,
+   "ece": 0.5083821982399638,
+   "brier": 1.0244070009128952,
+   "nll": 3.1381710762056683,
+   "mean_conf": 0.9282995725858398,
+   "confident_error_rate": 0.4625,
+   "coverage_at_0_9": 0.7875,
+   "coverage_at_5pct_error": 0.0,
+   "coverage_at_1pct_error": 0.0
+  }
+ },
+ "latency_ms": {
+  "p50": 31.33818751666695,
+  "p95": 45.10172070004046,
+  "n": 764
+ },
+ "suite": "kev/evals/v4/transfer-v4 (development split)",
+ "endpoint": "http://127.0.0.1:8120",
+ "requested_model": "julia-1",
+ "served_model": "julia-1",
+ "records": 764,
+ "questions": 764,
+ "device": "CPU (Apple silicon Mac); latency not comparable with the RTX 4060 runs"
+}

@@ -28,7 +28,10 @@
 | Rizzo 1.7B, q8 | 0.639 | 22.5% | 3% | 35 ms | 2.5 GB |
 | Laya | 0.585 | 3.1% | 0% | 21 ms | 5.5 GB |
 | NanoJev 0.6B | 0.343 | 0.5% | 0% | 29 ms | 2.4 GB |
+| Julia-1 (added 28 Sep, CPU) | 0.450 | 30.5% | 0% | 30 ms\* | 1.1 GB RAM\* |
 | Nimble-9B, 4-bit | did not fit: out of memory on the first request | | | | 7.5 GB idle |
+
+\* Julia-1 ran on an Apple-silicon Mac's CPU, so its latency and memory aren't comparable with the GPU rows. Details in [`stability/`](stability#julia-1-checks).
 
 **Short version:** Jev leads. If you can't use it, **Kev-4B quantized to 4-bit** is the best all-rounder: 9.6 points behind Jev, in 3.8 GB, and almost never confidently wrong. **SemIf** is close behind with no training at all, and **Von** is the pick when speed matters most.
 
@@ -52,8 +55,13 @@ We also ran every setup on Kev's public `transfer-v4` suite. The order at the to
 | Laya | 0.649 | 4.4% | 0% |
 | Rizzo 1.7B, q8 | 0.570 | 32.5% | 11% |
 | NanoJev 0.6B | 0.399 | 0.6% | 0% |
+| Julia-1 (CPU) | 0.531 | 25.3% | 1% |
 
 Every run's predictions and report are in [`results/runs/<setup>/<suite>/`](results/runs); [`results/summary.json`](results/summary.json) and [`results/tasks.json`](results/tasks.json) collect them.
+
+## Stability and uncertainty
+
+Follow-up measurements: Kev-4B 4-bit reruns bit-identically one request at a time, but its probabilities drift once the server batches five or more concurrent requests (decisions barely move: 2 flips in 2,598 batched answers). Also 95% intervals (Kev 0.872, 0.850–0.894; gap to Jev 9.6 points, 7.5–11.8) and held-out automation rates. See [`stability/`](stability).
 
 ## The scorer
 
@@ -85,9 +93,10 @@ python -m gutcheck.benchmark --endpoint https://api.typesafe.ai --model jev-late
 | [`harness/import_kev_runs.py`](harness/import_kev_runs.py) | One-off import of our first-round `transfer-v4` runs into gutcheck's format |
 | [`patches/kev-quant.patch`](patches/kev-quant.patch) | Adds `KEV_QUANT=4bit\|8bit` (bitsandbytes) to Kev, plus a cache release that lets Kev-9B load in 8 GB |
 | [`patches/nimble-quant.patch`](patches/nimble-quant.patch) | Adds `NIMBLE_QUANT` to Nimble's CUDA scorer |
-| [`adapters/`](adapters) | `/v1/systemone` servers for SemIf, Nimble and NanoJev, and the generative Ollama baseline |
+| [`adapters/`](adapters) | `/v1/systemone` servers for SemIf, Nimble, NanoJev and Julia-1, and the generative Ollama baseline |
 | [`results/`](results) | Every run on both suites |
 | [`humanness/`](humanness) | The humanness experiment described below |
+| [`stability/`](stability) | Reruns, concurrency (batching) tests, bootstrap intervals and held-out coverage, with their runs |
 
 ## Reproduce
 
@@ -115,6 +124,7 @@ python -m gutcheck.benchmark --endpoint https://api.typesafe.ai --model jev-late
 | NanoJev | [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | `76fdfc9ecdca` | C-Tianyu/NanoJev @ `unified-games-v1` | MIT |
 | Baseline | Ollama 0.34.4 | — | qwen3:8b (8.2B, Q4_K_M) | — |
 | Jev | api.typesafe.ai | — | `jev-latest`, served as `jev-1.13.0` | hosted |
+| Julia-1 | [SupersonicLabs/Julia-1](https://huggingface.co/SupersonicLabs/Julia-1) | — | revision `a85b1273` (weights SHA-256 `df853bf7…`), official Python runtime, CPU | Apache-2.0 |
 | Suite | [jabr/classifier-benchmark](https://github.com/jabr/classifier-benchmark) | `afb83bee3b74` | `cases/v2.toml` | CC0 |
 
 Hardware and stack: GeForce RTX 4060 (8,188 MiB, driver 580.178), Ryzen 5 5600 with 8 vCPUs in a VM with GPU passthrough, 32 GB RAM, PyTorch 2.8.0, transformers 5.17, bitsandbytes 0.50.2.

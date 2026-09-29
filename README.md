@@ -6,6 +6,8 @@
 
 📄 **Article:** [Jev is the best decision model. Here's what to run when you can't use it.](https://medium.com/autom8ly/jev-is-the-best-decision-model-heres-what-to-run-when-you-can-t-use-it-bb44e94946cf)
 
+📄 **Follow-up:** [Kev gives the same answer every time. Until you batch it.](https://medium.com/autom8ly/kev-gives-the-same-answer-every-time-until-you-batch-it-6ba0134f7b75)
+
 ## What this is
 
 [Jev](https://typesafe.ai) (TypeSafe) answers typed questions (pick one, yes/no, score) with probabilities instead of generated text. Within a week of its release, seven open-source look-alikes appeared. We ran 14 configurations of them, one at a time, on a single **RTX 4060 (8,188 MiB)**, and scored every one, plus Jev itself through TypeSafe's API, on the independent [jabr/classifier-benchmark](https://github.com/jabr/classifier-benchmark) v2 suite: 866 synthetic cases across 49 decision tasks, public domain (CC0).
@@ -61,7 +63,7 @@ Every run's predictions and report are in [`results/runs/<setup>/<suite>/`](resu
 
 ## Stability and uncertainty
 
-Follow-up measurements: Kev-4B 4-bit reruns bit-identically one request at a time, but its probabilities drift once the server batches five or more concurrent requests (decisions barely move: 2 flips in 2,598 batched answers). Also 95% intervals (Kev 0.872, 0.850–0.894; gap to Jev 9.6 points, 7.5–11.8) and held-out automation rates. See [`stability/`](stability).
+Follow-up measurements ([article](https://medium.com/autom8ly/kev-gives-the-same-answer-every-time-until-you-batch-it-6ba0134f7b75)): Kev-4B 4-bit reruns bit-identically one request at a time, but its probabilities drift once the server batches five or more concurrent requests (decisions barely move: 2 flips in 2,598 batched answers). Also 95% intervals (Kev 0.872, 0.850–0.894; gap to Jev 9.6 points, 7.5–11.8) and held-out automation rates. See [`stability/`](stability).
 
 ## The scorer
 
